@@ -29,28 +29,36 @@ go_underground(state.underground);
 //   ROAD FORKS
 // ============================================================================
 
-if(! ("fitr_down" in state)){
-	state.fitr_down <- false;
-  print("[DEBUG] 'Fork in the Road' road fork (down) initialized\n");
+if(! ("normal_fitr" in state)){
+	state.normal_fitr <- false;
+  print("[DEBUG] 'Fork in the Road' normal road initialized\n");
 }
 
-if(! ("fitr_up" in state)){
-	state.fitr_up <- false;
-  print("[DEBUG] 'Fork in the Road' road fork (up) initialized\n");
+if(! ("normal_iv" in state)){
+	state.normal_iv <- false;
+  print("[DEBUG] 'Fork in the Road' normal road initialized\n");
 }
 
-fitr_down.set_solid(state.fitr_down);
-fitr_up.set_solid(state.fitr_up);
+function toggle_normal_road(tilemap, enabled){
+tilemap.set_solid(enabled);
+}
 
+toggle_normal_road(normal_fitr, state.normal_fitr);
+toggle_normal_road(normal_iv, state.normal_iv);
 
 
 // ============================================================================
-//   SECRET AREAS
+//   SECRET ROADS
 // ============================================================================
 
-if(! ("iv_secret" in state)){
-	state.iv_secret <- false;
-  print("[DEBUG] 'Icy Valley' secret road initialized\n");
+if(! ("secret_fitr" in state)){
+	state.secret_fitr <- false;
+  print("[DEBUG] 'A Fork in the Road' secret road fork initialized\n");
+}
+
+if(! ("secret_iv" in state)){
+	state.secret_iv <- false;
+  print("[DEBUG] 'Icy Valley' secret road fork initialized\n");
 }
 
 function toggle_secret_road(tilemap, enabled){
@@ -58,4 +66,5 @@ function toggle_secret_road(tilemap, enabled){
   tilemap.set_solid(enabled);
 }
 
-toggle_secret_road(iv_secret, state.iv_secret);
+toggle_secret_road(secret_fitr, state.secret_fitr);
+toggle_secret_road(secret_iv, state.secret_iv);

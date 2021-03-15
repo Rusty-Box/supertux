@@ -715,7 +715,7 @@
 )
 
 (tilegroup
-	(name (_ "Water & Clouds"))
+	(name (_ "Water"))
 	(tiles
 		1 2 3 4
 		5 6 7 8
@@ -725,8 +725,6 @@
 		75 76 77 0
 		78 79 82 0
 		80 81 83 0
-		
-		9 0 0 0
 	)
 )
 (tile
@@ -772,42 +770,6 @@
 		75 76 77
 		78 79 82
 		80 81 83
-	)
-)
-(tile
-	(id 9)
-	(images "worldmap/shared/clouds_01.png"
-		"worldmap/shared/clouds_02.png"
-		"worldmap/shared/clouds_03.png"
-		"worldmap/shared/clouds_04.png"
-		"worldmap/shared/clouds_05.png"
-		"worldmap/shared/clouds_06.png"
-		"worldmap/shared/clouds_07.png"
-		"worldmap/shared/clouds_08.png"
-		"worldmap/shared/clouds_09.png"
-		"worldmap/shared/clouds_10.png"
-		"worldmap/shared/clouds_11.png"
-		"worldmap/shared/clouds_12.png"
-		"worldmap/shared/clouds_13.png"
-		"worldmap/shared/clouds_14.png"
-		"worldmap/shared/clouds_15.png"
-		"worldmap/shared/clouds_16.png"
-		"worldmap/shared/clouds_17.png"
-		"worldmap/shared/clouds_18.png"
-		"worldmap/shared/clouds_19.png"
-		"worldmap/shared/clouds_20.png"
-		"worldmap/shared/clouds_21.png"
-		"worldmap/shared/clouds_22.png"
-		"worldmap/shared/clouds_23.png"
-		"worldmap/shared/clouds_24.png"
-		"worldmap/shared/clouds_25.png"
-		"worldmap/shared/clouds_26.png"
-		"worldmap/shared/clouds_27.png"
-		"worldmap/shared/clouds_28.png"
-		"worldmap/shared/clouds_29.png"
-		"worldmap/shared/clouds_30.png"
-		"worldmap/shared/clouds_31.png"
-		"worldmap/shared/clouds_32.png"
 	)
 )
 )

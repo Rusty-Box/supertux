@@ -3,53 +3,41 @@
   (name "run-left")
   (fps 15)
   (hitbox 31 27 72 100)
-  (images
-   "run-0.png"
-   "run-1.png"
-   "run-2.png"
-   "run-3.png"
-   "run-4.png"
-   "run-5.png"
-   "run-6.png"
-   "run-7.png"
-   )
-  )
+  (images "run-0.png"
+		  "run-1.png"
+		  "run-2.png"
+		  "run-3.png"
+		  "run-4.png"
+		  "run-5.png"
+		  "run-6.png"
+		  "run-7.png")
+ )
  (action
   (name "run-right")
-  (mirror-action "run-left")
   (fps 15)
   (hitbox 37 27 72 100)
-  )
+  (mirror-action "run-left")
+ )
   
  (action
   (name "jump-left")
-  (hitbox 31 27 72 100)
   (fps 12)
-  (loops 1)
-  (images
-   "jump-0.png"
-   "jump-1.png"
-   "jump-2.png"
-   "jump-3.png"
-   "jump-4.png"
-   "jump-5.png"
-   "jump-3.png"
-   "jump-4.png"
-   "jump-5.png"
-   "jump-3.png"
-   "jump-4.png"
-   "jump-5.png"
-   "jump-2.png"
-   "jump-1.png"
-   "jump-0.png")
-  )
+  (loop-frame 4)
+  (hitbox 31 27 72 100)
+  (images "jump-0.png"
+		  "jump-1.png"
+		  "jump-2.png"
+		  "jump-3.png"
+		  "jump-4.png"
+		  "jump-5.png")
+ )
  (action
   (name "jump-right")
-  (mirror-action "jump-left")
   (fps 12)
   (loops 1)
   (hitbox 37 27 72 100)
-  )
+  (mirror-action "jump-left")
+ )
   
  (action
   (name "stand-left")
@@ -115,116 +103,103 @@
  
  (action
   (name "leap-left")
-  (hitbox 31 27 72 100)
   (fps 15)
   (loops 1)
-  (images
-   "leap-0.png"
-   "leap-1.png"
-   "leap-2.png"
-   "leap-3.png"
-   )
-  )
+  (hitbox 31 27 72 100)
+  (images "leap-0.png"
+		  "leap-1.png"
+		  "leap-2.png"
+		  "leap-3.png")
+ )
  (action
   (name "leap-right")
-  (mirror-action "leap-left")
   (fps 15)
+  (loops 1)
   (hitbox 37 27 72 100)
-  )
+  (mirror-action "leap-left")
+ )
   
  (action
   (name "stomp-left")
-  (hitbox 31 27 72 100)
   (fps 15)
   (loops 1)
-  (images
-   "leap-0.png"
-   "leap-1.png"
-   "leap-2.png"
-   "leap-3.png"
-   "leap-3.png"
-   "leap-3.png"
-   "leap-3.png"
-   "stomp-0.png"
-   "stomp-1.png"
-   "stomp-2.png"
-   "stomp-3.png"
-   "stomp-4.png"
-   "stomp-5.png"
-   "stomp-6.png"
-   "stomp-7.png"
-   )
-  )
+  (hitbox 31 27 72 100)
+  (images "stomp-0.png"
+		  "stomp-1.png"
+		  "stomp-2.png"
+		  "stomp-3.png"
+		  "stomp-4.png"
+		  "stomp-5.png"
+		  "stomp-6.png"
+		  "stomp-7.png")
+ )
  (action
   (name "stomp-right")
-  (mirror-action "stomp-left")
   (fps 15)
+  (loops 1)
   (hitbox 37 27 72 100)
-  )
+  (mirror-action "stomp-left")
+ )
   
  (action
   (name "throw-left")
   (fps 15)
   (loops 1)
   (hitbox 31 27 72 100)
-  (images
-   "throw-0.png"
-   "throw-1.png"
-   "throw-2.png"
-   "throw-3.png"
-   "throw-4.png"
-   "throw-5.png"
-   "throw-6.png"
-   "throw-7.png"
-   "throw-8.png"
-   "throw-9.png"
-   "throw-10.png"
-   "stand-0.png"
-   )
-  )
+  (images "throw-0.png"
+		  "throw-1.png"
+		  "throw-2.png"
+		  "throw-3.png"
+		  "throw-4.png"
+		  "throw-5.png"
+		  "throw-6.png"
+		  "throw-7.png"
+		  "throw-8.png"
+		  "throw-9.png"
+		  "throw-10.png"
+		  "stand-0.png")
+ )
  (action
   (name "throw-right")
   (fps 15)
   (loops 1)
-  (mirror-action "throw-left")
   (hitbox 37 27 72 100)
-  )
+  (mirror-action "throw-left")
+ )
   
  (action
   (name "busted-left")
   (fps 12)
-  (hitbox 16 32 50 70)
-  (images
-   "stunned-0.png"
-   "stunned-1.png"
-   "stunned-2.png"
-   "stunned-3.png"
-   "stunned-4.png"
-   "stunned-5.png"
-   "stunned-6.png"
-   "stunned-7.png"
-   )
-  )
+  (hitbox 31 27 72 100)
+  (images "stunned-0.png"
+		  "stunned-1.png"
+		  "stunned-2.png"
+		  "stunned-3.png"
+		  "stunned-4.png"
+		  "stunned-5.png"
+		  "stunned-6.png"
+		  "stunned-7.png")
+ )
  (action
   (name "busted-right")
+  (fps 12)
+  (hitbox 37 27 72 100)
   (mirror-action "busted-left")
-  (hitbox 16 32 50 70)
-  )
+ )
   
  (action
   (name "defeat-left")
   (fps 12)
-  (hitbox 16 32 50 70)
-  (images
-   "stunned-8.png"
-   "stunned-9.png"
-   "stunned-10.png"
-   "stunned-11.png"
-   )
-  )
+  (hitbox 31 27 72 100)
+  (images "stunned-8.png"
+		  "stunned-9.png"
+		  "stunned-10.png"
+		  "stunned-11.png")
+ )
  (action
   (name "defeat-right")
+  (fps 12)
+  (hitbox 37 27 72 100)
   (mirror-action "defeat-left")
-  (hitbox 16 32 50 70)
-  )
+ )
 )

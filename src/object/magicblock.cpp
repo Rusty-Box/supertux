@@ -34,7 +34,7 @@
 
 namespace {
 
-const float MIN_INTENSITY = 0.8f;
+const float MIN_INTENSITY = 0.1f;
 const float ALPHA_SOLID = 0.7f;
 const float ALPHA_NONSOLID = 0.3f;
 const float MIN_SOLIDTIME = 1.0f;
@@ -62,7 +62,7 @@ MagicBlock::MagicBlock(const ReaderMapping& mapping) :
   if (mapping.get("color", vColor )) {
     m_color = Color( vColor );
   } else {
-    m_color = Color(0, 0, 0);
+    m_color = Color(1, 1, 1);
   }
 
   if (!Editor::is_active()) {
